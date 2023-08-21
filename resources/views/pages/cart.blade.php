@@ -2,11 +2,11 @@
 
 use function Livewire\Volt\state;
 
-state('count', fn () => cache()->get(sha1(request()->ip()).'count', 0));
+state('count', fn () => cache()->get(sha1(request()->ip()).'_count', 0));
 
 $remove = function () {
     if ($this->count > 0) {
-        cache()->put(sha1(request()->ip()).'count', --$this->count);
+        cache()->put(sha1(request()->ip()).'_count', --$this->count);
     }
 };
 
@@ -23,7 +23,7 @@ $remove = function () {
 
             @if ($count)
                 <div class="grid gap-8 mt-8">
-                    @foreach (range(1, cache()->get('count')) as $item)
+                    @foreach (range(1, cache()->get(sha1(request()->ip()).'_count')) as $item)
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex items-center gap-4">
                                 <img src="https://via.placeholder.com/256x256.png/f3f4f6" width="128" height="128" />
