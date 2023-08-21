@@ -4,5 +4,5 @@ This is the code for a tutorial I wrote for Laracasts: [Build a simple online st
 
 **Fork it, tweak it, and make it your own!**
 
-![CleanShot 2023-08-21 at 19 23 26@2x](https://github.com/benjamincrozat/laracasts-tutorial-01/assets/3613731/28ad40bd-cef1-48c9-a879-366d6f1f0b41)
-![CleanShot 2023-08-21 at 19 23 32@2x](https://github.com/benjamincrozat/laracasts-tutorial-01/assets/3613731/ff7c2a5b-baba-4a02-afd8-db5a0589a758)
+<img width="1111" alt="CleanShot 2023-08-21 at 19 23 26@2x" src="https://github.com/benjamincrozat/dummy-store/assets/3613731/35956500-5768-4e12-9fb7-9bdb964dd2f4">
+<img width="1111" alt="CleanShot 2023-08-21 at 19 23 32@2x" src="https://github.com/benjamincrozat/dummy-store/assets/3613731/cf9dce77-d951-4369-917d-3eb16b598a10">
