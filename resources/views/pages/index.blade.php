@@ -61,4 +61,8 @@ $add = function () {
             </div>
         @endforeach
     </div>
+
+    <footer class="mt-16 text-center">
+        Demo by <a href="https://benjamincrozat.com" class="font-bold underline">Benjamin Crozat</a>.
+    </footer>
 </x-layouts.app>
