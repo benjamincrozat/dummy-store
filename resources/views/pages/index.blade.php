@@ -4,12 +4,12 @@ use function Livewire\Volt\on;
 use function Livewire\Volt\state;
 
 state([
-    'count' => fn () => cache()->get('count', 0),
+    'count' => fn () => cache()->get(sha1(request()->ip()).'count', 0),
     'done' => false,
 ]);
 
 on(['product-added-to-cart' => function () {
-    cache()->put('count', ++$this->count);
+    cache()->put(sha1(request()->ip()).'count', ++$this->count);
 }]);
 
 $add = function () {

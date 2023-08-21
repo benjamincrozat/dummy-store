@@ -2,11 +2,11 @@
 
 use function Livewire\Volt\state;
 
-state('count', fn () => cache()->get('count', 0));
+state('count', fn () => cache()->get(sha1(request()->ip()).'count', 0));
 
 $remove = function () {
     if ($this->count > 0) {
-        cache()->put('count', --$this->count);
+        cache()->put(sha1(request()->ip()).'count', --$this->count);
     }
 };
 
